@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>    
+  <h1>Word Guessing Game v1.0</h1>
+  <h2>Total Score: <%= score %></h2>
+        <form method="get" action="/">
+        <label>Congratulations! you win! <% if (wrong_num!=0){ %>(attempt times: <%= wrong_num %>) <% } %> </label>
+        <input type="submit" value="Play again?" style="line-height: 20px text-size; font-size: 16px;">
+        </form>
+</html>
+

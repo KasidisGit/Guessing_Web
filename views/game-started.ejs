@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+      <h1>Word Guessing Game v1.0</h1>
+      <h2>Category: <%= category %></h2>
+        <% if ( wrong_num  > 0) { %>
+          <p>Wrong Answer, please try again (<%= wrong_num %>) </p>
+        <% } %>
+        <form method="post"  autocomplete="off" action="/check" >
+        <label>Answer has <%= cur_question.length %> length: </label>
+        <input type="text" onkeyup="this.value = this.value.toUpperCase();" name="questionName" size="<%= cur_question.length %>" maxlength="<%= cur_question.length %>" style="line-height: 20px text-size; font-size: 16px;" required>
+        <button type="submit" >Submit</button>
+        </form></br>
+        <button onclick="Hint()" >Click for hint</button>
+
+</html>
+
+<script>
+        var question_name = '<%= cur_question %>';
+        function Hint(){
+          random = Math.floor(Math.random() * question_name.length);
+          alert("This question contains "+question_name[random]);
+        }
+
+</script>

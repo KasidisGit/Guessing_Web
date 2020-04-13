@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <h1>Word Guessing Game v1.0</h1>
+    <h2>Please complete infomation to play game.</h2>
+    <div>
+        <form method="post" action="/start" autocomplete="off">
+        <label>Enter your question: </label>
+        <input type="text" name="questionName" style="line-height: 20px; font-size: 16px; text-align:center; width: 10.75%;" placeholder="Create new question" onkeyup="this.value = this.value.toUpperCase();" required>&nbsp;&nbsp;
+        <label>Category: </label>
+        <input type="text" name="category" style="line-height: 20px; font-size: 16px; width: 12.75%; text-align:center;" placeholder="Create question category" onkeyup="this.value = this.value.toUpperCase();" required>
+        <input type="submit" value="save / play" style="line-height: 30px; font-size: 30px; " >
+        </form>
+
+    </div>
+    <div>
+        <form method="post" action="/history">
+        </br><label>Recenly question: &nbsp&nbsp&nbsp</label>
+            <input type="submit" value="Click" style="line-height: 20px; font-size: 16px;">
+        </form>
+    </div>
+</html>
+
