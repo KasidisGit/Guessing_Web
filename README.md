@@ -1,10 +1,9 @@
-# Guessing_Web by Mongo,JS
+# Guessing_Web
+using node.js and mongoDB
 
-## Run database using mongoDB
 ## Run server
 ```
 node app.js
 ```
-
-## Open browser
+## Running on
 go to http://localhost:3000/
